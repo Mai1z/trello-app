@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 interface CardProps {
-    text: string
+    text: string,
+    index: number
 }
 
 export const Card = ({ text } : CardProps) => {

@@ -8,6 +8,10 @@ interface AddNewItemProps {
     dark?: boolean
 }
 
+interface AddItemButtonProps {
+    dark?: boolean
+}
+
 export const AddNewItem = (props: AddNewItemProps) => {
     const [showForm, setShowForm] = useState(false)
     const { onAdd, toggleButtonText, dark } = props
@@ -28,10 +32,6 @@ export const AddNewItem = (props: AddNewItemProps) => {
             { toggleButtonText }
         </AddItemButton>
     )
-}
-
-interface AddItemButtonProps {
-    dark?: boolean
 }
 
 const AddItemButton = styled.button<AddItemButtonProps>`
